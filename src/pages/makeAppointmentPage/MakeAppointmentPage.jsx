@@ -22,14 +22,6 @@ export const MakeAppointmentPage = () => {
   const [appointmentTime, setAppointmentTime] = useState('');
   const [selectTimeDialog, setSelectTimeDialog] = useState(false);
   const [selectedBarber, setSelectedBarber] = useState({});
-  const availableTimeSlots = [
-    '9:00 AM',
-    '11:00 AM',
-    '1:00 PM',
-    '3:00 PM',
-    '5:00 PM',
-    '7:00 PM',
-  ];
 
   useEffect(() => {
     srGetUserInfo(u_email).then((res) => {
@@ -132,8 +124,7 @@ export const MakeAppointmentPage = () => {
     </div>
     {
       selectTimeDialog && 
-      <SelectTimeDialog 
-        availableTimeSlots={availableTimeSlots}
+      <SelectTimeDialog
         appointmentTime={appointmentTime}
         setAppointmentTime={setAppointmentTime}
         setSelectTimeDialog={setSelectTimeDialog}

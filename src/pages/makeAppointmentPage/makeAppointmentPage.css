@@ -116,6 +116,7 @@
   height: 20rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -131,7 +132,6 @@
 }
 
 .make-appointment-page__select-time-dialog__time-list{
-  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -139,7 +139,6 @@
   gap: 2rem;
   width: 100%;
   height: max-content;
-  padding: 1rem;
 }
 
 .make-appointment-page__select-time-dialog__button{
@@ -156,4 +155,12 @@
 .disable-btn{
   background-color: #9c9c9c;
   pointer-events: none;
+}
+
+.barber-time__error_msg{
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 1rem;
+  font-weight: 600;
 }

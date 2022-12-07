@@ -12,3 +12,19 @@ export const formateDateAndTime = (date) => {
   });
   return `${monthName} ${day}, ${year} at ${time}`;
 };
+
+export const calcAMPM = (time) => {
+  if (time >= 12) {
+    return "PM";
+  } else {
+    return "AM";
+  }
+};
+
+export const convert12HourTime = (time) => {
+  if (time > 12) {
+    return time - 12;
+  } else {
+    return time;
+  }
+};

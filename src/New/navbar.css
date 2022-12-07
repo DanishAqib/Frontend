@@ -1,7 +1,6 @@
 
 html {
   font-size: 100.5%;
-  background-image: url("");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -215,7 +214,7 @@ li {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
   }
 
   .mobile-menu-link ul li:first-child {

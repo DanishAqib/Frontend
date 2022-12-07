@@ -52,3 +52,26 @@ export const srRemoveAppointmentRequest = async (uar_id) => {
     return response;
   } catch (error) {}
 };
+
+export const srUpdateBarberTimings = async (
+  b_id,
+  bt_start_time,
+  bt_end_time,
+  bt_interval
+) => {
+  try {
+    const response = await axios.put(url + "/update_timings/" + b_id, {
+      bt_start_time,
+      bt_end_time,
+      bt_interval,
+    });
+    return response;
+  } catch (error) {}
+};
+
+export const srGetBarberTimings = async (b_id) => {
+  try {
+    const response = await axios.get(url + "/get_timings/" + b_id);
+    return response.data;
+  } catch (error) {}
+};

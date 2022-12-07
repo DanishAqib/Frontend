@@ -60,3 +60,19 @@
 .status-dialog__footer button:hover{
   opacity: 0.5;
 }
+
+.barber__timings-dialog__body{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.status-dialog__body-input{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.dialog__input{
+  width: 7em;
+}
