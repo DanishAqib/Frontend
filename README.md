@@ -1,4 +1,4 @@
-# E-Lawyer (Frontend)
+Book Barber (Frontend)
 Book Barber is a web application that allows users to book a barber appointment online. The application is built using React for the front-end, Node.js for the back-end, and PostgreSQL for the database.
 
 # Note
